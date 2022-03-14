@@ -26,9 +26,10 @@ Clone Repository  using
 
 OR  using HTTPS
 
-`https://github.com/amrendrakind/conferencePage_capstoneProject.git` 
+`git clone https://github.com/amrendrakind/conferencePage_capstoneProject.git` 
 
 move into project directory
+
 `cd conferencePage_capstoneProject`
 
 ## Author
