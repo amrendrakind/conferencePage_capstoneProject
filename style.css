@@ -10,25 +10,25 @@ img {
   border: 0;
 }
 
-.wrap {
-  width: 100%;
-}
-
-/* section {
-
-} */
-
 @media only screen and (max-width: 768px) {
   html {
     overflow-y: scroll;
   }
 
+  .wrap {
+    width: 100%;
+  }
+
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
   body {
     margin: 0;
     padding: 0;
-    font-family: nanum-gothic, sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
     color: rgb(51, 51, 51);
-    /* width: 90%; */
   }
 
   .mobile_menu_button img {
@@ -36,8 +36,7 @@ img {
     top: 35px;
     left: 20px;
     z-index: 1;
-    width: 20px;
-    height: 18px;
+    width: 32px;
   }
 
   .mobile-logo-wraper {
@@ -48,17 +47,140 @@ img {
 
   .main_invite_wrap {
     background: url("./images/mobile_intro_bg.png") center top no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main_invite_wrap {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .wrap > section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main_invite_wrap section img {
+    width: 90%;
+  }
+
+  .main_invite_wrap section div.message {
+    margin: 17px 0.75em 0;
+    width: calc(100% - 2.5em);
+    padding: 1em 0.5em;
+    line-height: 150%;
+    font-size: 16px;
+    height: auto;
+    text-align: justify;
+    word-break: break-all;
+    border: 4px solid #fff;
+    background-color: #f7f7f8;
+  }
+
+  .main_invite_wrap section div.location {
+    text-align: center;
+    width: 100%;
+    font-size: 1.125em;
+    margin: 0;
+    height: 95px;
+    padding-top: 40px;
+  }
+
+  .main_invite_wrap section div.location .date-info {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: Verdana;
+    width: 90%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 4px;
+    letter-spacing: 0;
+    color: #575757;
+  }
+
+  .main_invite_wrap section div.location .location-address {
+    font-size: 16px;
+    width: 90%;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .program-info-wraper {
+    background-image: url("./images/pattern_bg.png");
+    background-repeat: repeat;
+    background-color: #272a32;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .normal {
+    font-weight: 400;
+  }
+
+  .program-info-wraper section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: #fff;
     height: auto;
   }
 
-section {
-  text-align: center;
-  padding-top: 51px;
-}
+  .program-info-wraper section h2 {
+    font-size: 24px;
+  }
 
-section img {
-    width: 90%;
-}
+  .guide-bar {
+    width: 53px;
+    border-top: 1px solid #ef513c;
+    margin: 16px auto 54px;
+  }
+
+  .program-info-wraper section .program-list {
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    padding: 16px 0;
+    height: auto;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .program-info-wraper section .program-list .program-icon {
+    float: left;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .program-info-wraper section .program-list .program-sub-title {
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    flex: 1 1 0;
+    margin: 0 8px;
+    color: #ef513c;
+    font-weight: 700;
+  }
+
+  .program-info-wraper section .program-list .program-sub-description {
+    width: calc(74% - 6.5em);
+    float: left;
+    font-size: 0.81em;
+    text-align: left;
+    word-break: keep-all;
+    overflow: auto;
+    height: auto;
+    color: #fff;
+    line-height: 1.5em;
+    padding: 8px 17px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
