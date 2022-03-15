@@ -195,52 +195,51 @@ img {
   .sponsors-wrap {
     text-align: center;
     background-color: #2e2e2e;
-}
+  }
 
-.sponsors-wrap .content {
-  text-align: center;
-  padding: 79px 16px 45px;
-  color: white;
-  height: auto;
-}
+  footer .content {
+    text-align: center;
+    padding: 16px 0;
+    width: 90%;
+    margin: auto;
+  }
 
-.sponsors-wrap .content .sponsor-logos {
-  overflow: auto;
-  height: auto;
-  margin: auto;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-  width: 90%;
-  position: relative;
-}
+  .sponsors-wrap .content {
+    text-align: center;
+    padding: 79px 16px 45px;
+    color: white;
+    height: auto;
+  }
 
-.sponsors-wrap .content .sponsor-logos a img {
-  width: 130px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
-}
+  .sponsors-wrap .content .sponsor-logos {
+    overflow: auto;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    width: 80%;
+    position: relative;
+  }
 
-footer {
-  font-size: 0.875em;
-  color: #272a32;
-  padding:2%
-}
+  footer .content img {
+    float: unset;
+    margin: 8px 0;
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
+  }
 
-footer .content {
-  text-align: center;
-  padding: 16px 0;
-  width: 90%;
-  margin: auto;
-}
+  .sponsors-wrap .content .sponsor-logos a img {
+    width: 130px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+  }
 
-footer .content img {
-  float: unset;
-  margin: 8px 0;
-  vertical-align: middle;
-  text-align: center;
-  width: 200px;
-}
-
+  footer {
+    font-size: 0.875em;
+    color: #272a32;
+    padding: 2%;
+  }
 }
 
 @media only screen and (max-width: 300px) {
@@ -269,7 +268,6 @@ footer .content img {
     line-height: 1.5em;
     padding: 8px 17px;
   }
-
 }
 
 @media only screen and (min-width: 769px) {
