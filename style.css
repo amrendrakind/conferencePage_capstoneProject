@@ -190,11 +190,39 @@ img {
     border: 0;
     padding: 10px 18px;
     margin-top: 25px;
+  }
+
+  .more-link {
+    display: none;
+  }
 }
 
-.more-link {
-display: none;
-}
+@media only screen and (max-width: 300px) {
+  .program-info-wraper section .program-list {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    padding: 16px 0;
+    height: auto;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .program-info-wraper section .program-list .program-sub-description {
+    width: calc(100% - 5em);
+    float: left;
+    font-size: 0.81em;
+    text-align: left;
+    word-break: keep-all;
+    overflow: auto;
+    height: auto;
+    color: #fff;
+    line-height: 1.5em;
+    padding: 8px 17px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
