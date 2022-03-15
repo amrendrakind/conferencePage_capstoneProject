@@ -50,9 +50,6 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-  .main_invite_wrap {
     text-align: center;
     padding-top: 120px;
     padding-bottom: 60px;
@@ -92,7 +89,6 @@ img {
   .main_invite_wrap section div.location .date-info {
     font-size: 21px;
     font-weight: 700;
-    font-family: Verdana;
     width: 90%;
     display: inline-block;
     text-align: left;
@@ -172,7 +168,7 @@ img {
   .program-info-wraper section .program-list .program-sub-description {
     width: calc(74% - 6.5em);
     float: left;
-    font-size: 0.81em;
+    font-size: 1em;
     text-align: left;
     word-break: keep-all;
     overflow: auto;
@@ -225,7 +221,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   body {
     margin: 0;
     padding: 0;
