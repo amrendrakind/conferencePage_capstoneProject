@@ -187,6 +187,94 @@ img {
     padding: 10px 18px;
     margin-top: 25px;
   }
+/* Speaker Item */
+
+.b-bottom {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  .speakers-wrap {
+    height: auto;
+    padding-bottom: 35px;
+    width: 93%;
+    margin: auto;
+  }
+  
+  .speakers-wrap div.content {
+    text-align: center;
+    padding-top: 79px;
+    color: #272a32;
+    height: auto;
+  }
+  
+  .speakers-wrap div.content .speakers-list .speaker {
+    margin: 0 0 0 10px;
+    border: 0;
+    width: calc(100% - 10px);
+    float: left;
+    height: 249px;
+  }
+  
+  .speakers-wrap div.content .speakers-list .speaker img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+  }
+  
+  .speakers-wrap div.content .speakers-list .speaker .desc {
+    text-align: left;
+  }
+  
+  .speakers-wrap div.content .speakers-list .speaker .desc .speaker-name {
+    font-size: 22px;
+  }
+  
+  .speakers-wrap div.content .speakers-list .speaker .desc .speaker-tag-name {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .speakers-wrap div.content .speakers-list .speaker .desc .speaker-job {
+    font-size: 13px;
+    color: #ff4f38;
+    text-align: left;
+  }
+  
+  .speakers-wrap div.content .speakers-list .speaker .desc .speaker-desc {
+    word-break: keep-all;
+    text-align: left;
+    font-size: 0.875em;
+    padding-right: 1em;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+  
+  .speakers-wrap div.content .more-btn {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    display: flex;
+  }
+  
+  .speakers-wrap div.content .more-btn img {
+    margin-left: 8px;
+  }
+  
+  .speakers-wrap div.content .more-link {
+    color: #333;
+  }
+  
+
+/* Speaker Item end */
+
 
   .more-link {
     display: none;

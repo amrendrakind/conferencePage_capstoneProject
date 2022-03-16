@@ -27,7 +27,7 @@
         <section>
 
             <div class="">
-                <img src="/images/landingPageTitle.png" alt="welcome sharing world!">
+                <img src="./images/landingPageTitle.png" alt="welcome sharing world!">
             </div>
             <div class="message">
                 <p>
@@ -104,9 +104,14 @@
         </section>
     </div>
 <!-- JS Implementation Start for Featured Speakers -->
-<div>
-    <section>
-
+<div >
+    <section class="wrap speakers-wrap b-bottom clearfix"> 
+        <div class="content">
+            <h3> Featured Speakers</h3>
+            <div class="guide-bar"></div>
+            <div class="speakers-list " id="speakers-list"> </div>
+            <button class="more-btn" type="button" id="more-btn" onclick="showMoreSpeakers()">MORE<img src="images/icons/arrow-down.png" alt=""/></button>
+        </div>
     </section>
 </div>
 <!-- JS Implementation End for Featured Speakers -->
@@ -136,6 +141,7 @@
         </div>
     </div>
 </footer>
+<script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
