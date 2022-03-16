@@ -31,7 +31,7 @@ window.addEventListener('resize', () => {
   } else {
     speakersToShow = speakers;
   }
-  speakersToShow.reverse().forEach((speaker) => {
+  speakersToShow.forEach((speaker) => {
     const speakerHTML = `<div class="speaker clearfix">
                                 <img src=${speaker.picture} alt="${speaker.name}"/>
                                 <div class="desc">
@@ -44,8 +44,6 @@ window.addEventListener('resize', () => {
     speakersList.insertAdjacentHTML('afterbegin', speakerHTML);
   });
 });
-
-// shows more speakers
 
 morebtn.addEventListener('click', () => {
   speakersList.innerHTML = '';
