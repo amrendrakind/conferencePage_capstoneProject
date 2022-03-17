@@ -10,13 +10,13 @@ img {
   border: 0;
 }
 
-@media only screen and (max-width: 768px) {
+.wrap {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
   html {
     overflow-y: scroll;
-  }
-
-  .wrap {
-    width: 100%;
   }
 
   p {
@@ -31,6 +31,66 @@ img {
     color: rgb(51, 51, 51);
   }
 
+  .toggle-menu {
+    display: unset;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #272a32;
+    opacity: 0.95;
+  }
+
+  .toggle-menu .close-wrapper {
+    display: block;
+    padding: 16px;
+  }
+
+  .toggle-menu .close-wrapper img {
+    float: right;
+  }
+
+  .toggle-menu .toggle-nav .nav-list {
+    padding: 0 16px;
+  }
+
+  .toggle-menu .toggle-nav .nav-list .nav-item {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 16px 0;
+  }
+
+  .toggle-menu .toggle-nav .nav-list .nav-item a {
+    color: #fff;
+  }
+
+  .toggle-menu .toggle-nav .nav-list .nav-item:last-child {
+    border: none;
+    text-align: center;
+    padding-top: 42px;
+  }
+
+  .toggle-menu .toggle-nav .nav-list .nav-item:last-child a {
+    color: #ef513c;
+    padding: 10px 36px;
+  }
+
+  .toggle-menu .toggle-nav .nav-list .btn-link {
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    color: #ef513c;
+    border: 2px solid #ef513c;
+    margin-top: 8px;
+  }
+
+  .toggle-menu .toggle-nav .nav-list .active {
+    color: #ef513c;
+  }
+
+  .header-wrap {
+    display: none;
+  }
+
   .mobile_menu_button img {
     position: absolute;
     top: 35px;
@@ -43,6 +103,10 @@ img {
     width: 100%;
     text-align: center;
     margin: 1em 0;
+  }
+
+  .top-menu {
+    display: none;
   }
 
   .main_invite_wrap {
@@ -136,7 +200,7 @@ img {
     margin: 16px auto 54px;
   }
 
-  .program-info-wraper section .program-list {
+  .program-info-wraper section .program-card {
     width: 93%;
     display: flex;
     flex-direction: row;
@@ -149,13 +213,13 @@ img {
     background: rgba(255, 255, 255, 0.1);
   }
 
-  .program-info-wraper section .program-list .program-icon {
+  .program-info-wraper section .program-card .program-icon {
     float: left;
     margin: 0;
     padding-left: 10px;
   }
 
-  .program-info-wraper section .program-list .program-sub-title {
+  .program-info-wraper section .program-card .program-sub-title {
     float: left;
     text-align: left;
     font-size: 18px;
@@ -165,7 +229,7 @@ img {
     font-weight: 700;
   }
 
-  .program-info-wraper section .program-list .program-sub-description {
+  .program-info-wraper section .program-card .program-sub-description {
     width: calc(74% - 6.5em);
     float: left;
     font-size: 1em;
@@ -190,6 +254,10 @@ img {
 
   .b-bottom {
     border-bottom: 1px solid #dfdfdf;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .hide {
@@ -238,7 +306,8 @@ img {
 
   .sponsors-wrap .content .sponsor-logos a img {
     width: 130px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg)
+      brightness(103%) contrast(103%);
   }
 
   .speakers-wrap div.content .speakers-list .speaker img {
@@ -332,7 +401,7 @@ img {
 }
 
 @media only screen and (max-width: 300px) {
-  .program-info-wraper section .program-list {
+  .program-info-wraper section .program-card {
     width: 93%;
     display: flex;
     flex-direction: column;
@@ -345,7 +414,7 @@ img {
     background: rgba(255, 255, 255, 0.1);
   }
 
-  .program-info-wraper section .program-list .program-sub-description {
+  .program-info-wraper section .program-card .program-sub-description {
     width: calc(100% - 5em);
     float: left;
     font-size: 0.81em;
@@ -358,9 +427,18 @@ img {
     padding: 8px 17px;
   }
 }
+/* Desktop Version */
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: none;
+  }
 
-@media only screen and (min-width: 769px) {
+  .mobile_menu_button {
+    display: none;
+  }
+  
   body {
+    display: unset;
     margin: 0;
     padding: 0;
     font-family: nanum-gothic, sans-serif;
@@ -373,5 +451,222 @@ img {
     color: white;
     text-align: center;
     text-decoration: underline;
+  }
+
+  .top-menu {
+    width: 100%;
+    background-color: #3e3e3e;
+    height: 36px;
+    text-align: right;
+    line-height: 36px;
+    vertical-align: middle;
+  }
+
+  .top-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+  }
+
+  .top-menu ul li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 0;
+  }
+
+  .top-menu ul a {
+    color: white;
+  }
+
+  .header-wrap {
+    box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
+    position: relative;
+  }
+
+  header div.content {
+    height: 80px;
+    line-height: 80px;
+  }
+  
+  header div.content a img {
+    margin-top: 13px;
+  }
+  
+  header div.content nav {
+    width: calc(100% - 130px);
+    height: 80px;
+    float: right;
+    color: black;
+    text-align: right;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  header div.content nav .nav-list li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  header div.content nav .nav-list li a {
+    margin: 0 25px;
+    color: #888;
+    font-size: 0.938em;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  
+  header div.content nav .nav-list li .btn-link {
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    color: #ef513c;
+    border: 2px solid #ef513c;
+  }
+  
+  header div.content nav .nav-list li .active {
+    color: #ef513c;
+  }
+
+  .main_invite_wrap {
+    background: url("./images/desktop/bg_landing.png") center top no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .wrap > section {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .wrap > nav, .wrap div.content {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+  .main_invite_wrap section div.message {
+    text-align: justify;
+    width: 631px;
+    border: 4px solid white;
+    background-color: #f7f7f8;
+    margin: 15px 0 40px;
+    line-height: 220%;
+    padding: 10px 25px 0;
+    font-size: 1.125em;
+  }
+
+  .main_invite_wrap section div.location {
+    text-align: left;
+  }
+
+  .main_invite_wrap section div.location .date-info {
+    font-weight: 700;
+    font-size: 36px;
+    color: #575757;
+  }
+
+  .main_invite_wrap section div.location .location-address {
+    font-size: 1.5em;
+  }
+
+  .program-info-wraper {
+    background-image: url("./images/pattern_bg.png");
+    background-repeat: repeat;
+    background-color: #272a32;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .normal {
+    font-weight: 400;
+  }
+
+  .program-info-wraper section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: #fff;
+    height: auto;
+  }
+
+  .program-info-wraper section h2 {
+    font-size: 24px;
+  }
+
+  .guide-bar {
+    width: 53px;
+    border-top: 1px solid #ef513c;
+    margin: 16px auto 54px;
+  }
+
+  .program-info-wraper section .program-list {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .program-info-wraper section .program-list .program-card:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  .program-info-wraper section .program-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 0 3px;
+    padding: 8px;
+    border: 0;
+    float: left;
+    width: calc(18% - 5px);
+    background: rgb(255 255 255 / 10%);
+  }
+
+  .program-info-wraper section .program-card .program-icon {
+    float: left;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .program-info-wraper section .program-card .program-sub-title {
+    float: left;
+    font-size: 18px;
+    margin: 0 8px;
+    color: #ef513c;
+    font-weight: 700;
+  }
+
+  .program-info-wraper section .program-card .program-sub-description {
+    font-size: 1em;
+    display: flex;
+    text-align: center;
+    word-break: keep-all;
+    overflow: auto;
+    height: auto;
+    color: #fff;
+    line-height: 1.5em;
+    padding: 8px 8px;
+  }
+
+  .program-info-wraper .join-button {
+    display: unset;
+    background-color: #ef513c;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+    padding: 10px 18px;
+    margin-top: 25px;
   }
 }
