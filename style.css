@@ -489,7 +489,7 @@ p {
 
   header div.content {
     height: 80px;
-    line-height: 80px;
+    line-height: 50px;
   }
 
   footer .content img {
