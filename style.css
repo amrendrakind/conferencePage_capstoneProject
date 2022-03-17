@@ -18,14 +18,14 @@ img {
   width: 100%;
 }
 
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 @media only screen and (max-width: 767px) {
   html {
     overflow-y: scroll;
-  }
-
-  p {
-    margin-block-start: 0;
-    margin-block-end: 0;
   }
 
   body {
@@ -716,6 +716,11 @@ img {
     width: calc(50% - 10px);
     float: left;
     height: 294px;
+  }
+
+  .sponsors-wrap .content .sponsor-logos a img {
+    width: 130px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
   }
 
   .speakers-wrap div.content .speakers-list .speaker img {
