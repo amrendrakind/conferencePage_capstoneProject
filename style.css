@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -40,9 +44,29 @@ img {
     opacity: 0.95;
   }
 
+  .mobile_menu_button img {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    z-index: 1;
+    width: 32px;
+  }
+
   .toggle-menu .close-wrapper {
     display: block;
     padding: 16px;
+  }
+
+  .main_invite_wrap section img {
+    width: 90%;
+  }
+
+  footer .content img {
+    float: unset;
+    margin: 8px 0;
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
   }
 
   .toggle-menu .close-wrapper img {
@@ -91,14 +115,6 @@ img {
     display: none;
   }
 
-  .mobile_menu_button img {
-    position: absolute;
-    top: 35px;
-    left: 20px;
-    z-index: 1;
-    width: 32px;
-  }
-
   .mobile-logo-wraper {
     width: 100%;
     text-align: center;
@@ -122,10 +138,6 @@ img {
   .wrap > section {
     width: 100%;
     margin: 0 auto;
-  }
-
-  .main_invite_wrap section img {
-    width: 90%;
   }
 
   .main_invite_wrap section div.message {
@@ -292,22 +304,13 @@ img {
     margin: 12px 0;
   }
 
-  footer .content img {
-    float: unset;
-    margin: 8px 0;
-    vertical-align: middle;
-    text-align: center;
-    width: 200px;
-  }
-
   .speakers-wrap div.content .more-btn img {
     margin-left: 8px;
   }
 
   .sponsors-wrap .content .sponsor-logos a img {
     width: 130px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg)
-      brightness(103%) contrast(103%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
   }
 
   .speakers-wrap div.content .speakers-list .speaker img {
@@ -427,7 +430,7 @@ img {
     padding: 8px 17px;
   }
 }
-/* Desktop Version */
+
 @media only screen and (min-width: 768px) {
   .hidden {
     display: none;
@@ -436,7 +439,7 @@ img {
   .mobile_menu_button {
     display: none;
   }
-  
+
   body {
     display: unset;
     margin: 0;
@@ -488,11 +491,27 @@ img {
     height: 80px;
     line-height: 80px;
   }
-  
+
+  footer .content img {
+    margin-top: 21px;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 28px;
+    width: 200px;
+  }
+
   header div.content a img {
     margin-top: 13px;
   }
-  
+
+  .wrap > nav,
+  .wrap div.content {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
   header div.content nav {
     width: calc(100% - 130px);
     height: 80px;
@@ -502,13 +521,13 @@ img {
     vertical-align: middle;
     position: relative;
   }
-  
+
   header div.content nav .nav-list li {
     margin: 0;
     padding: 0;
     display: inline-block;
   }
-  
+
   header div.content nav .nav-list li a {
     margin: 0 25px;
     color: #888;
@@ -517,7 +536,7 @@ img {
     text-decoration: none;
     vertical-align: middle;
   }
-  
+
   header div.content nav .nav-list li .btn-link {
     font-size: 1.125em;
     font-weight: bold;
@@ -526,7 +545,7 @@ img {
     color: #ef513c;
     border: 2px solid #ef513c;
   }
-  
+
   header div.content nav .nav-list li .active {
     color: #ef513c;
   }
@@ -546,12 +565,6 @@ img {
     width: 98%;
     margin: 0 auto;
   }
-
-  .wrap > nav, .wrap div.content {
-    max-width: 1100px;
-    width: 98%;
-    margin: 0 auto;
-}
 
   .main_invite_wrap section div.message {
     text-align: justify;
@@ -617,11 +630,6 @@ img {
     justify-content: center;
   }
 
-  .program-info-wraper section .program-list .program-card:hover {
-    border: 1px solid #fff;
-    cursor: pointer;
-  }
-  
   .program-info-wraper section .program-card {
     display: flex;
     flex-direction: column;
@@ -632,6 +640,11 @@ img {
     float: left;
     width: calc(18% - 5px);
     background: rgb(255 255 255 / 10%);
+  }
+
+  .program-info-wraper section .program-list .program-card:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
   }
 
   .program-info-wraper section .program-card .program-icon {
@@ -668,5 +681,114 @@ img {
     border: 0;
     padding: 10px 18px;
     margin-top: 25px;
+  }
+
+  .speakers-wrap {
+    height: auto;
+    padding-bottom: 35px;
+  }
+
+  .b-bottom {
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .speakers-wrap div.content {
+    text-align: center;
+    padding-top: 79px;
+    color: #272a32;
+    height: auto;
+  }
+
+  .main_speakes_wrap section .speaker_list {
+    overflow: auto;
+    height: auto;
+  }
+
+  .speakers-wrap div.content .speakers-list .speaker {
+    margin: 0 0 0 10px;
+    border: 0;
+    width: calc(50% - 10px);
+    float: left;
+    height: 294px;
+  }
+
+  .speakers-wrap div.content .speakers-list .speaker img {
+    float: left;
+    width: 178px;
+    margin-right: 30px;
+  }
+
+  .speakers-wrap div.content .speakers-list .speaker .desc {
+    text-align: left;
+  }
+
+  .speakers-wrap div.content .speakers-list .speaker .desc .speaker-name {
+    font-size: 22px;
+  }
+
+  .speakers-wrap div.content .speakers-list .speaker .desc .speaker-tag-name {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .speakers-wrap div.content .speakers-list .speaker .desc .speaker-job {
+    font-size: 13px;
+    color: #ff4f38;
+    text-align: left;
+  }
+
+  .speakers-wrap div.content .speakers-list .speaker .desc .speaker-desc {
+    word-break: keep-all;
+    text-align: left;
+    font-size: 0.875em;
+    padding-right: 1em;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+
+  .speakers-wrap div.content .more-btn {
+    display: none;
+  }
+
+  .sponsors-wrap {
+    text-align: center;
+    background-color: #2e2e2e;
+  }
+
+  .sponsors-wrap .content {
+    text-align: center;
+    padding: 79px 16px 45px;
+    color: white;
+    height: auto;
+  }
+
+  .sponsors-wrap .content .sponsor-logos {
+    overflow: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .sponsors-wrap .content .sponsor-logos a {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    margin-right: 50px;
+  }
+
+  footer {
+    font-size: 0.875em;
+    color: #272a32;
+    padding: 32px;
   }
 }

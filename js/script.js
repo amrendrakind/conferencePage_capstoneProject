@@ -7,11 +7,11 @@ let speakersToShow = speakers;
 
 window.onload = () => {
   speakersList.innerHTML = '';
-  if (window.screen.width <= 768) {
+  if (window.screen.width < 768) {
     speakersToShow = speakers.slice(0, 2);
   }
   speakersToShow.reverse().forEach((speaker) => {
-    const speakerHTML = `<div class="speaker clearfix">
+    const speakerHTML = `<div class="speaker">
                             <img src=${speaker.picture} alt="${speaker.name}"/>
                             <div class="desc">
                                 <p href="#" class="speaker-name">${speaker.name}</p>
@@ -26,7 +26,7 @@ window.onload = () => {
 window.addEventListener('resize', () => {
   document.getElementById('more-btn').classList.remove('hide');
   speakersList.innerHTML = '';
-  if (window.screen.width <= 768) {
+  if (window.screen.width < 768) {
     speakersToShow = speakers.slice(0, 2);
   } else {
     speakersToShow = speakers;
