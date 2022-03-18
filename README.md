@@ -12,7 +12,10 @@
 - JavaScripts
 - GitFlow
 - Linters
-- Documented Work
+
+## Video Presentation Link
+
+[Video Presentation Link](https://www.loom.com/share/d1c1301a1c4a4b119bf0c2d4b805ebee)
 
 ## Live Demo (Link for My Capstone Project)
 
@@ -26,9 +29,10 @@ Clone Repository  using
 
 OR  using HTTPS
 
-`https://github.com/amrendrakind/conferencePage_capstoneProject.git` 
+`git clone https://github.com/amrendrakind/conferencePage_capstoneProject.git` 
 
 move into project directory
+
 `cd conferencePage_capstoneProject`
 
 ## Author
