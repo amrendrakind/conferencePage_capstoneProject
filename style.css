@@ -14,9 +14,9 @@ img {
   border: 0;
 }
 
-.wrap {
+/* .wrap {
   width: 100%;
-}
+} */
 
 p {
   margin-block-start: 0;
@@ -935,12 +935,14 @@ p {
 
   .logo-wrapper .content {
     text-align: center;
-    padding: 79px 16px 45px;
+    padding-top: 80px;
+    padding-bottom: 45px;
   }
 
   .summits-wrapper .content {
     text-align: center;
-    padding: 79px 16px 45px;
+    padding-top: 80px;
+    padding-bottom: 45px;
   }
 
   .summits-wrapper .content .past-links {
