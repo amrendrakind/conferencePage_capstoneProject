@@ -12,7 +12,10 @@
 - JavaScripts
 - GitFlow
 - Linters
-- Documented Work
+
+## Video Presentation Link
+
+[Video Presentation Link](https://www.loom.com/share/48a1d74ec54144ccaaaa24f03e7d1ed6)
 
 ## Live Demo (Link for My Capstone Project)
 
