@@ -873,7 +873,8 @@ p {
 
   .sponsors-wrap .content {
     text-align: center;
-    padding: 79px 16px 45px;
+    padding-top: 80px;
+    padding-bottom: 45px;
     color: white;
     height: auto;
   }
