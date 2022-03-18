@@ -68,8 +68,10 @@ morebtn.addEventListener('click', () => {
 
 mobileMenu.addEventListener('click', () => {
   document.getElementById('toggle-menu').classList.toggle('toggle-menu');
+  document.querySelector('html').style.overflowY = 'hidden';
 });
 
 closeMenu.addEventListener('click', () => {
   document.getElementById('toggle-menu').classList.toggle('toggle-menu');
+  document.querySelector('html').style.overflowY = 'auto';
 });

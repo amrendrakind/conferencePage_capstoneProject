@@ -1,31 +1,23 @@
-body {
-  overflow-x: hidden;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  border: 0;
-}
-
-/* .wrap {
-  width: 100%;
-} */
-
-p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
 @media only screen and (max-width: 767px) {
   html {
     overflow-y: scroll;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    border: 0;
+  }
+
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 
   body {
@@ -33,6 +25,7 @@ p {
     padding: 0;
     font-family: "Nanum Gothic", sans-serif;
     color: rgb(51, 51, 51);
+    overflow-x: hidden;
   }
 
   .hidden {
@@ -45,11 +38,13 @@ p {
     width: 100%;
     position: absolute;
     background: rgb(34, 34, 34);
-    opacity: 0.91;
+    opacity: 0.97;
+    overflow: hidden;
+    z-index: 99;
   }
 
   .mobile_menu_button img {
-    z-index: 1;
+    z-index: 0;
     width: 30px;
   }
 
@@ -512,6 +507,27 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  html {
+    overflow-y: scroll;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    border: 0;
+  }
+
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
   .hidden {
     display: none;
   }
