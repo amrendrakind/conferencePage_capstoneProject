@@ -531,6 +531,10 @@ p {
     color: rgb(51, 51, 51);
   }
 
+  .main_invite_wrap section img {
+    width: 98%;
+  }
+
   .more-link {
     display: block;
     font-size: 1.125em;
@@ -917,9 +921,16 @@ p {
     padding: 32px;
     line-height: 25px;
     border: 1px solid #dfdfdf;
-    width: 960px;
     background-color: #fff;
     font-size: 0.875em;
+  }
+
+  .logo-wrapper .content p {
+    text-align: justify;
+  }
+
+  .about-landing-wrap div.content .header-card p {
+    text-align: justify;
   }
 
   .logo-wrapper .content {
