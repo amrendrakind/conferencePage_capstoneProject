@@ -3,6 +3,9 @@ import data from './speakerData.js';
 const { speakers } = data;
 const speakersList = document.getElementById('speakers-list');
 const morebtn = document.getElementById('more-btn');
+const mobileMenu = document.querySelector('.mobile_menu_button');
+const closeMenu = document.querySelector('#close-menu');
+
 let speakersToShow = speakers;
 
 window.onload = () => {
@@ -61,4 +64,12 @@ morebtn.addEventListener('click', () => {
     speakersList.insertAdjacentHTML('afterbegin', speakerHTML);
     document.getElementById('more-btn').classList.add('hide');
   });
+});
+
+mobileMenu.addEventListener('click', () => {
+  document.getElementById('toggle-menu').classList.toggle('toggle-menu');
+});
+
+closeMenu.addEventListener('click', () => {
+  document.getElementById('toggle-menu').classList.toggle('toggle-menu');
 });

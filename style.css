@@ -35,21 +35,22 @@ p {
     color: rgb(51, 51, 51);
   }
 
+  .hidden {
+    display: none;
+  }
+
   .toggle-menu {
     display: unset;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: absolute;
     background: #272a32;
     opacity: 0.95;
   }
 
   .mobile_menu_button img {
-    position: absolute;
-    top: 35px;
-    left: 20px;
     z-index: 1;
-    width: 32px;
+    width: 30px;
   }
 
   .toggle-menu .close-wrapper {
@@ -67,6 +68,12 @@ p {
     vertical-align: middle;
     text-align: center;
     width: 200px;
+  }
+
+  .about-landing-wrap div.content a {
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: underline;
   }
 
   .toggle-menu .close-wrapper img {
@@ -213,7 +220,6 @@ p {
   }
 
   .program-info-wraper section .program-card {
-    width: 93%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -268,10 +274,6 @@ p {
     border-bottom: 1px solid #dfdfdf;
   }
 
-  .hidden {
-    display: none;
-  }
-
   .hide {
     display: none !important;
   }
@@ -280,6 +282,20 @@ p {
     content: "";
     clear: both;
     display: table;
+  }
+
+  .logo-wrapper .content img {
+    margin: 32px 0;
+    width: 90%;
+  }
+
+  footer.dark_footer div.content img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(5deg) brightness(100%) contrast(100%);
+  }
+
+  .summits-wrapper .content .past-links img {
+    width: 95%;
+    margin-top: 10px;
   }
 
   .speakers-wrap {
@@ -310,7 +326,7 @@ p {
 
   .sponsors-wrap .content .sponsor-logos a img {
     width: 130px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(5deg) brightness(100%) contrast(100%);
   }
 
   .speakers-wrap div.content .speakers-list .speaker img {
@@ -397,9 +413,72 @@ p {
   }
 
   footer {
-    font-size: 0.875em;
+    font-size: 0.87em;
     color: #272a32;
-    padding: 2%;
+  }
+
+  .wrap {
+    width: unset;
+    overflow-x: hidden;
+  }
+
+  .wrap > nav,
+  .wrap div.content {
+    max-width: 1100px;
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .about-landing-wrap {
+    height: auto;
+  }
+
+  .mobile_menu_button {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    z-index: 1;
+    width: 32px;
+  }
+
+  .about-landing-wrap div.content {
+    padding: 18px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .about-landing-wrap div.content img.title-image {
+    width: 90%;
+    padding-top: 120px;
+  }
+
+  .about-landing-wrap div.content .header-card {
+    width: unset;
+    text-align: center;
+    margin: 0 auto 33px;
+    padding: 32px;
+    line-height: 25px;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    font-size: 0.875em;
+  }
+
+  .logo-wrapper .content {
+    text-align: center;
+    padding: 48px 12px 36px;
+  }
+
+  .summits-wrapper .content {
+    padding: 48px 12px 36px;
+    text-align: center;
+  }
+
+  footer.dark_footer {
+    background-color: #2e2e2e;
+  }
+
+  footer.dark_footer div.content {
+    color: white;
   }
 }
 
@@ -433,6 +512,10 @@ p {
 
 @media only screen and (min-width: 768px) {
   .hidden {
+    display: none;
+  }
+
+  .toggle-menu {
     display: none;
   }
 
@@ -482,16 +565,6 @@ p {
     color: white;
   }
 
-  .header-wrap {
-    box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
-    position: relative;
-  }
-
-  header div.content {
-    height: 80px;
-    line-height: 50px;
-  }
-
   footer .content img {
     margin-top: 21px;
     float: left;
@@ -503,6 +576,26 @@ p {
 
   header div.content a img {
     margin-top: 13px;
+  }
+
+  .logo-wrapper .content img {
+    margin: 32px 0;
+  }
+
+  .about-landing-wrap div.content a {
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  .header-wrap {
+    box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
+    position: relative;
+  }
+
+  header div.content {
+    height: 80px;
+    line-height: 50px;
   }
 
   .wrap > nav,
@@ -643,7 +736,7 @@ p {
   }
 
   .program-info-wraper section .program-list .program-card:hover {
-    border: 1px solid #fff;
+    border: 1px solid hsl(7, 100%, 74%);
     cursor: pointer;
   }
 
@@ -674,13 +767,7 @@ p {
   }
 
   .program-info-wraper .join-button {
-    display: unset;
-    background-color: #ef513c;
-    color: #fff;
-    font-size: 20px;
-    border: 0;
-    padding: 10px 18px;
-    margin-top: 25px;
+    display: none;
   }
 
   .speakers-wrap {
@@ -696,6 +783,15 @@ p {
     content: "";
     clear: both;
     display: table;
+  }
+
+  footer.dark_footer div.content img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(5deg) brightness(100%) contrast(100%);
+  }
+
+  .sponsors-wrap .content .sponsor-logos a img {
+    width: 130px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(5deg) brightness(100%) contrast(100%);
   }
 
   .speakers-wrap div.content {
@@ -718,9 +814,14 @@ p {
     height: 294px;
   }
 
-  .sponsors-wrap .content .sponsor-logos a img {
-    width: 130px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+  .about-landing-wrap div.content .header-card img {
+    margin: 20px;
+  }
+
+  .summits-wrapper .content .past-links img:hover {
+    border: 1px solid rgb(251, 251, 251);
+    cursor: pointer;
+    filter: hue-rotate(5deg) brightness(105%) contrast(105%);
   }
 
   .speakers-wrap div.content .speakers-list .speaker img {
@@ -795,5 +896,51 @@ p {
     font-size: 0.875em;
     color: #272a32;
     padding: 32px;
+  }
+
+  .about-landing-wrap {
+    background: #f7f7f8 url("./images/desktop/bg_about.png") center no-repeat;
+    height: auto;
+    overflow: auto;
+  }
+
+  .about-landing-wrap div.content {
+    padding-top: 140px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-landing-wrap div.content .header-card {
+    text-align: center;
+    margin: 0 auto 33px;
+    padding: 32px;
+    line-height: 25px;
+    border: 1px solid #dfdfdf;
+    width: 960px;
+    background-color: #fff;
+    font-size: 0.875em;
+  }
+
+  .logo-wrapper .content {
+    text-align: center;
+    padding: 79px 16px 45px;
+  }
+
+  .summits-wrapper .content {
+    text-align: center;
+    padding: 79px 16px 45px;
+  }
+
+  .summits-wrapper .content .past-links {
+    padding: 20px;
+  }
+
+  footer.dark_footer {
+    background-color: #2e2e2e;
+  }
+
+  footer.dark_footer div.content {
+    color: white;
   }
 }
