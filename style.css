@@ -44,8 +44,8 @@ p {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: #272a32;
-    opacity: 0.95;
+    background: rgb(34, 34, 34);
+    opacity: 0.91;
   }
 
   .mobile_menu_button img {
