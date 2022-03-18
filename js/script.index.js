@@ -14,7 +14,7 @@ window.onload = () => {
     speakersToShow = speakers.slice(0, 2);
   }
   speakersToShow.reverse().forEach((speaker) => {
-    const speakerHTML = `<div class="speaker">
+    const speakerHTML = `<article class="speaker">
                             <img src=${speaker.picture} alt="${speaker.name}"/>
                             <div class="desc">
                                 <p href="#" class="speaker-name">${speaker.name}</p>
@@ -22,7 +22,7 @@ window.onload = () => {
                                 <p href="#" class="speaker-job">${speaker.workplace}</p>
                                 <p class="speaker-desc">${speaker.description}</p>
                             </div>
-                        </div>`;
+                         </article>`;
     speakersList.insertAdjacentHTML('afterbegin', speakerHTML);
   });
 };
@@ -35,7 +35,7 @@ window.addEventListener('resize', () => {
     speakersToShow = speakers;
   }
   speakersToShow.forEach((speaker) => {
-    const speakerHTML = `<div class="speaker clearfix">
+    const speakerHTML = `<article class="speaker clearfix">
                                 <img src=${speaker.picture} alt="${speaker.name}"/>
                                 <div class="desc">
                                     <p href="#" class="speaker-name">${speaker.name}</p>
@@ -43,7 +43,7 @@ window.addEventListener('resize', () => {
                                     <p href="#" class="speaker-job">${speaker.workplace}</p>
                                     <p class="speaker-desc">${speaker.description}</p>
                                 </div>
-                            </div>`;
+                        </article>`;
     speakersList.insertAdjacentHTML('afterbegin', speakerHTML);
   });
 });
@@ -51,7 +51,7 @@ window.addEventListener('resize', () => {
 morebtn.addEventListener('click', () => {
   speakersList.innerHTML = '';
   speakers.reverse().forEach((speaker) => {
-    const speakerHTML = `<div class="speaker clearfix">
+    const speakerHTML = `<article class="speaker clearfix">
                                   <img src=${speaker.picture} alt="${speaker.name}"/>
                                   <div class="desc">
                                       <p href="#" class="speaker-name">${speaker.name}</p>
@@ -60,7 +60,7 @@ morebtn.addEventListener('click', () => {
                                       <p class="speaker-desc">${speaker.description}</p>
       
                                   </div>
-                              </div>`;
+                          </article>`;
     speakersList.insertAdjacentHTML('afterbegin', speakerHTML);
     document.getElementById('more-btn').classList.add('hide');
   });

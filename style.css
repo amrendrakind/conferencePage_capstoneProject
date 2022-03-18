@@ -587,7 +587,6 @@
   }
 
   footer .content img {
-    margin-top: 21px;
     float: left;
     vertical-align: middle;
     text-align: center;
@@ -972,6 +971,6 @@
   }
 
   footer.dark_footer div.content {
-    color: white;
+    color: white; 
   }
 }
